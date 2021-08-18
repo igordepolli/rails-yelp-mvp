@@ -13,6 +13,12 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <%= link_to 'RestApp', root_path, id: "title-app-navbar" %>
+        <%= link_to 'New Restaurant', new_restaurant_path, class: "button-navbar" %>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
